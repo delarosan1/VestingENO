@@ -145,7 +145,7 @@ contract TokenVesting {
     mapping(address => bool) public admins;
     address public owner;
     bool public isPaused;
-    uint256 public releaseInterval = 120; 
+    uint256 public releaseInterval = 2592000; 
 
     event TokensClaimed(address indexed beneficiary, uint256 amount);
     event VestingAdded(address indexed beneficiary, uint256 totalAmount, uint256 vestingStart, uint256 cliffDuration, uint256 vestingDuration);
